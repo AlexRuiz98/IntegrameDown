@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/index.js",
     "dev": "cross-env NODE_ENV=development nodemon src/index.js",
-    "build-js": "parcel build src/js/adminevent.js --target browser --out-dir src/public/js/adminevent --out-file bundle --no-minify --no-source-maps && parcel build src/js/eventdetails.js --target browser --out-dir src/public/js/eventdetails --out-file bundle --no-minify --no-source-maps"
+    "build-js": "parcel build src/js/adminevent.js --target browser --out-dir src/public/js/adminevent --out-file bundle --no-minify --no-source-maps && parcel build src/js/eventdetails.js --target browser --out-dir src/public/js/eventdetails --out-file bundle --no-minify --no-source-maps && parcel build src/js/splideSlider.js --target browser --out-dir src/public/js/splideSlider --out-file bundle --no-minify --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "dependencies": {
     "@editorjs/editorjs": "^2.19.1",
     "@googlemaps/js-api-loader": "^1.11.3",
+    "@splidejs/splide": "^2.4.21",
     "axios": "^0.21.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
